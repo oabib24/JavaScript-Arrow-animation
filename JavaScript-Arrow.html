@@ -1,0 +1,84 @@
+<div class="btn-more-wr">
+	<p>FIND MORE</p>
+	<span id="arrow-down" class="arrow-down-btn bounce">
+		<img data-v-600c0352="" src="https://robsonhomes.com/themes/robson/assets/static/img/arrow_desktop.77744e9.svg">
+	</span>
+</div>
+<style>
+	.btn-more-wr {
+		color: white;
+		z-index: 999;
+		position: relative;
+		font-family: 'Work Sans';
+		text-align: center;
+	}
+
+	#arrow-down {
+		display: block;
+		text-align: center;
+	}
+
+	#arrow-down img {
+		width: 40px;
+		height: 27px;
+		cursor: pointer;
+	}
+
+	.bounce {
+		-webkit-animation: bounce 2s;
+		animation: bounce 2s;
+		-webkit-animation-iteration-count: infinite;
+		animation-iteration-count: infinite;
+	}
+
+	@-webkit-keyframes bounce {
+
+		0%,
+		25%,
+		50%,
+		75%,
+		100% {
+			-webkit-transform: translateY(0);
+			transform: translateY(0);
+		}
+
+		40% {
+			-webkit-transform: translateY(-20px);
+			transform: translateY(-20px);
+		}
+
+		60% {
+			-webkit-transform: translateY(-12px);
+			transform: translateY(-12px);
+		}
+	}
+
+	@keyframes bounce {
+
+		0%,
+		25%,
+		50%,
+		75%,
+		100% {
+			-webkit-transform: translateY(0);
+			transform: translateY(0);
+		}
+
+		40% {
+			-webkit-transform: translateY(-20px);
+			transform: translateY(-20px);
+		}
+
+		60% {
+			-webkit-transform: translateY(-12px);
+			transform: translateY(-12px);
+		}
+	}
+</style>
+<script>
+	var scrollTo = jQuery("#top-hero").outerHeight()
+
+	jQuery("#arrow-down").click(function () {
+		setTimeout(() => jQuery('html, body').animate({ scrollTop: scrollTo }, 800), 500);
+	})
+</script>
